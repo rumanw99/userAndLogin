@@ -1,10 +1,10 @@
 export const images = [
-    "../public/images/Innovation.png",
-    "../public/images/Medicine.png",
-    "../public/images/Education.png",
-    "../public/images/Pharmtech.png",
-    "../public/images/Research.png",
-    "../public/images/Technology.png",
-    "../public/images/Telemedicine.png",
-    "../public/images/Lorem Ipsum.png",
+    "/images/Innovation.png",
+    "/images/Medicine.png",
+    "/images/Education.png",
+    "/images/Pharmtech.png",
+    "/images/Research.png",
+    "/images/Technology.png",
+    "/images/Telemedicine.png",
+    "/images/Lorem Ipsum.png",
   ];
