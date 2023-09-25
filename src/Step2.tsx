@@ -37,42 +37,37 @@ const Step2 = () => {
       <div className="flex justify-center items-center flex-col gap-4">
 
 <div className="flex justify-center items-center">
-<Select _placeholder={{
-  color: '#B3B3B3',
-  fontFamily: 'Montserrat',
-  fontSize: '14px',
-  fontStyle: 'normal',
-  fontWeight: 500,
-  lineHeight: 'normal',
-  textAlign:'left'
-}} placeholder='English (US)'   
+<Select  
 className="selectCountry"
+color={"#B3B3B3"}
+fontFamily={"Montserrat"}
+fontSize='14px'
+fontStyle= 'normal'
+fontWeight= '500'
+lineHeight= 'normal'
 
         value={selectedOption || ''}
         onChange={handleOptionSelect}
 >
-  <option value='option1'>English (US)</option>
+  <option selected value='option1'>English (US)</option>
   <option value='option2'>Arabic (AR)</option>
   <option value='option3'>Italy (IT)</option>
 </Select>
   <div className="sp"></div>
 </div>
 <div className="flex justify-center items-center">
-<Select _placeholder={{
-  color: '#B3B3B3',
-  fontFamily: 'Montserrat',
-  fontSize: '14px',
-  fontStyle: 'normal',
-  fontWeight: 500,
-  lineHeight: 'normal',
-  textAlign:'left'
-}} placeholder='English (US)'   
+<Select color={"#B3B3B3"}
+fontFamily={"Montserrat"}
+fontSize='14px'
+fontStyle= 'normal'
+fontWeight= '500'
+lineHeight= 'normal' 
 className="selectCountry"
 
         value={selectedOption1 || ''}
         onChange={handleOptionSelect1}
 >
-<option value='option1'>English (US)</option>
+<option selected value='option1'>English (US)</option>
   <option value='option2'>Arabic (AR)</option>
   <option value='option3'>Italy (IT)</option>
 </Select>
@@ -86,13 +81,13 @@ className="selectCountry"
       <Button  className={`next disabled:opacity-50 ${
         !selectedOption || !selectedOption1? '' : ''
       }`}
-      onClick={nextStep} isDisabled={!selectedOption || !selectedOption1}>NEXT</Button>
-      <Button variant={"unstyled"} className="back"
+      onClick={nextStep} isDisabled={!selectedOption || !selectedOption1} marginTop={"70px"}>NEXT</Button>
+      <Button variant={"unstyled"} className="back" marginBottom={"-20px"}
       onClick={prevStep}>Back</Button>
       </div>
 
 
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex justify-center items-center gap-3">
       <svg onClick={prevStep} style={{cursor:"pointer"}} xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none">
   <circle cx="3.09242" cy="3.44325" r="2.92397" fill="#FF8C1E"/>
 </svg>

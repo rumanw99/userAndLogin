@@ -34,6 +34,18 @@ const Step3 = () => {
     setShowSuccessDialog(false);
   };
 
+
+  let buttonText = 'Pick 3 itmes';
+  if (selectedImages.length >= 1) {
+    buttonText = 'Pick 2 more';
+  }
+  if(selectedImages.length >= 2){
+    buttonText = 'Pick 1 more';
+  }
+  if(selectedImages.length >= 3){
+    buttonText = 'Submit';
+  }
+
   return (
     <div className="flex flex-col justify-center items-center w-full min-h-screen gap-5 md:gap-10 lg:gap-20 boxing" style={{ background:"#434E61"}}>
 
@@ -48,7 +60,7 @@ const Step3 = () => {
    
 
 
-<div className="flex flex-wrap justify-center items-center gap-2 sm:gap-4 ccc">
+<div className="flex flex-wrap justify-center items-center gap-4 sm:gap-4 ccc">
         {images.map((image) => (
           <div key={image}
           className={`cursor-pointer ${selectedImages.includes(image) ? "boxImage" : ''}`}
@@ -70,7 +82,7 @@ const Step3 = () => {
         !decibelButtonEnabled ? '' : ''
       }`}
 isDisabled={!decibelButtonEnabled}
-      onClick={finish}>Finish</Button>
+      onClick={finish}>{buttonText}</Button>
       <SuccessDialog isOpen={showSuccessDialog} onClose={closeSuccessDialog} />
       <Button
      className="back"

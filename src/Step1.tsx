@@ -54,13 +54,13 @@ const Step1 = () => {
       <InputLeftElement
       
         pointerEvents="none"
-        children={<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" className="mr-6">
-        <path d="M4.76073 11.4686L1.01904 11.846L1.5811 8.28899L6.35858 3.11004L7.62722 1.8414C8.11701 1.35161 8.91192 1.35161 9.40974 1.8414L10.7828 3.21443C11.2886 3.72028 11.2886 4.53927 10.7828 5.04512L4.76073 11.4686Z" stroke="#B3B3B3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M9.36947 6.03271L6.59131 3.24652" stroke="#B3B3B3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        children={<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+        <path d="M4.76073 11.4686L1.01904 11.846L1.5811 8.28899L6.35858 3.11004L7.62722 1.8414C8.11701 1.35161 8.91192 1.35161 9.40974 1.8414L10.7828 3.21443C11.2886 3.72028 11.2886 4.53927 10.7828 5.04512L4.76073 11.4686Z" stroke="#B3B3B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M9.36947 6.03271L6.59131 3.24652" stroke="#B3B3B3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>} // Replace this with your desired icon component
       className="inputIcon"
       />
-      <Input type="text" placeholder="Alice" className="inputText"
+      <Input  type="text" placeholder="Alice" className="inputText"
       _placeholder={{ color: "#FF8C1E" , textAlign:"center",
       fontFamily: 'Roboto',
       fontSize: '28px',

@@ -9,13 +9,14 @@ const Step = () => {
         setCurrentStep(currentStep + 1);
     };
     return (
-        <div className="flex justify-center items-center flex-col w-full h-screen gap-20 sm:gap-10 md:gap-5 lg:gap-2" style={{border:'1px solid black' , background:"#434E61"}}>
+        <div className="flex justify-center items-center flex-col w-full h-screen gap-20 sm:gap-10 md:gap-5 lg:gap-2 box1" style={{border:'1px solid black' , background:"#434E61"}}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="294"
                 height="436"
                 viewBox="0 0 294 436"
                 fill="none"
+                style={{marginBottom:'100px'}}
             >
                 <g filter="url(#filter0_d_101_401)">
                     <path
